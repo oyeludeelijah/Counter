@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e3;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  cursor: grabbing;
+  position: relative;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+}
+
+.btns,
+.number {
+  font-size: 5rem;
+}
+
+.number {
+  margin: 2rem 0;
+}
+
+.btns {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.plus_btn:hover {
+  background-color: rgb(114, 253, 114);
+}
+
+.minus_btn:hover {
+  background-color: rgb(255, 108, 108);
+}
+
+.btns:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btns:active {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rst_btn {
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 7%;
+  bottom: 7%;
+}
+
+.rst_btn:hover {
+  background-color: #4e4effba;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rst_btn:active {
+  box-shadow: 0px 0px 100px rgb(0, 0, 0);
+}
